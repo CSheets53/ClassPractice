@@ -1,8 +1,11 @@
 #include <iostream>
+#include "Product.h"
 
 int main()
 {
-	std::cout << "This is a Product Inventory Manager!" << std::endl;
+	Product newProduct;
+	
+	newProduct.AddItem();
 
 	return 0;
 }
