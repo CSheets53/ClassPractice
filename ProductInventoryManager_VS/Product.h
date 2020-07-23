@@ -16,4 +16,7 @@ private:
 public:
 	void PrintInformation();
 	void AddItem();
+
+	float GetTotalPrice() { return price * quantityOnHand; }
+	int GetID() { return id; }
 };

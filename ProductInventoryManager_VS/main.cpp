@@ -1,11 +1,21 @@
 #include <iostream>
-#include "Product.h"
+#include "Inventory.h"
 
 int main()
 {
-	Product newProduct;
-	
-	newProduct.AddItem();
+	Inventory mainInventory;
+
+	Product apples;
+	apples.AddItem();
+
+	Product bananas;
+	bananas.AddItem();
+
+	mainInventory.AddItemToInventory(apples);
+	mainInventory.AddItemToInventory(bananas);
+
+	mainInventory.PrintInventory();
+	mainInventory.FindTotalValueOfInventory();
 
 	return 0;
 }
